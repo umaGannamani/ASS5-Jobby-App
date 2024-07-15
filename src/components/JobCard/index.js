@@ -22,36 +22,36 @@ const JobCard = props => {
   } = jobDetails
 
   return (
-    <li className="job-card">
-      <Link to={`/jobs/${id}`} className="job-card-link">
-        <div className="logo-title-container-card">
+    <li className='job-card'>
+      <Link to={`/jobs/${id}`} className='job-card-link'>
+        <div className='logo-title-container-card'>
           <img
             src={companyLogoUrl}
-            alt="company logo"
-            className="company-logo-card"
+            alt='company logo'
+            className='company-logo-card'
           />
-          <div className="title-rating-container-card">
-            <h1 className="job-title-card">{title}</h1>
-            <div className="rating-container-card">
-              <AiFillStar className="star-icon-card" />
-              <p className="rating-number-card">{rating}</p>
+          <div className='title-rating-container-card'>
+            <h1 className='job-title-card'>{title}</h1>
+            <div className='rating-container-card'>
+              <AiFillStar className='star-icon-card' />
+              <p className='rating-number-card'>{rating}</p>
             </div>
           </div>
         </div>
-        <div className="location-package-container-card">
-          <div className="icon-type-container-card">
-            <IoLocationSharp className="type-icon" />
-            <p className="type-text">{location}</p>
+        <div className='location-package-container-card'>
+          <div className='icon-type-container-card'>
+            <IoLocationSharp className='type-icon' />
+            <p className='type-text'>{location}</p>
           </div>
-          <div className="icon-type-container-card">
-            <BsFillBriefcaseFill className="type-icon" />
-            <p className="type-text">{employmentType}</p>
+          <div className='icon-type-container-card'>
+            <BsFillBriefcaseFill className='type-icon' />
+            <p className='type-text'>{employmentType}</p>
           </div>
-          <p className="package-text">{packagePerAnnum}</p>
+          <p className='package-text'>{packagePerAnnum}</p>
         </div>
-        <hr className="separator" />
-        <h1 className="description-heading-card">Description</h1>
-        <p className="job-description-card">{jobDescription}</p>
+        <hr className='separator' />
+        <h1 className='description-heading-card'>Description</h1>
+        <p className='job-description-card'>{jobDescription}</p>
       </Link>
     </li>
   )

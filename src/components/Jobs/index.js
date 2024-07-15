@@ -116,7 +116,7 @@ class Jobs extends Component {
       const profileDetails = data.profile_details
       const updatedData = {
         name: profileDetails.name,
-        profilrImageUrl: profileDetails.profile_image_url,
+        profileImageUrl: profileDetails.profile_image_url,
         shortBio: profileDetails.short_bio,
       }
       this.setState({
